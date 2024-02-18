@@ -1,0 +1,54 @@
+#name-from {
+    height: 100vh;
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    color: #333;
+} 
+
+h1 {
+	position: sticky;
+	top: 0;
+    color:honeydew; 
+    font-family: "Gill Sans Extrabold", sans-serif; 
+    font-style: italic; 
+    background-color:lightskyblue; 
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+}
+
+
+.card-body {
+    background-image: url('/roombg.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.card-header {
+    background-color:powderblue; 
+    color: white; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 10px; 
+}
+
+#login:hover{
+	background-color: blue;
+	color:white;
+}
+
+#send-btn:hover{
+	background-color: green;
+	color:white;
+}
+#logout:hover {
+    background-color: red;
+    color: white; 
+}

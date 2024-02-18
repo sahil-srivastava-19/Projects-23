@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Chat Room </title>
+
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/0faddc1af8.js" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color: white;" >
+<h1>The Chat Hide-out <i class="fa fa-comments" aria-hidden="true"></i></h1>
+<div id="name-from" class="bg-primary d-flex align-items-center" style="background-image: url(chatbg.jpg); background-size: cover; background-position: center;">
+
+
+    <div class="container-fluid">
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-4">
+
+
+                <div class="input-group">
+
+                    <input type="text"
+                           placeholder="Enter your name"
+                           id="name-value"
+                           autofocus
+                           class="form-control"
+                        >
+
+                    <div class="input-group-append">
+
+                        <button class="btn btn-dark" id="login"> <i class="fa fa-sign-in" aria-hidden="true"></i> </button>
+
+                    </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<div id="chat-room" class="d-none">
+
+
+    <div class="container-fluid">
+
+        <div class="row justify-content-center">
+
+
+            <div class="col-md-6">
+
+
+                <div class="card mt-3">
+                    <div class="card-header">
+
+                        <h3 id="name-title"></h3>
+
+                    </div>
+                    <div class="card-body">
+
+                        <div class="input-group">
+
+                            <input type="text"
+                                   placeholder="Enter your message "
+                                   id="message-value"
+                                   autofocus
+                                   class="form-control"
+                            >
+
+                            <div class="input-group-append">
+
+                                <button class="btn btn-dark" id="send-btn"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </button>
+                                <button class="btn btn-dark" id="logout"> <i class="fa fa-sign-out" aria-hidden="true"></i> </button>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="table-responsive mt-3">
+
+                            <table id="message-container-table">
+
+
+
+                            </table>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
