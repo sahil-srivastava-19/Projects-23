@@ -37,11 +37,16 @@ public class Calculator {
         btn1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(btn1==e.getSource()){
-                    double a=Integer.parseInt(jt.getText());
-                    double b=Integer.parseInt(jt1.getText());
-                    String r=(a+b)+"";
-                    res.setText (r);
+                try{
+                    if (btn1 == e.getSource()) {
+                        double a = Integer.parseInt(jt.getText());
+                        double b = Integer.parseInt(jt1.getText());
+                        String r = (a + b) + "";
+                        res.setText(r);
+                    }
+                }
+                catch(NumberFormatException e1){
+                    res.setText("Invalid(NumberFormatException)");
                 }
             }
         });
@@ -52,11 +57,15 @@ public class Calculator {
         btn2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(btn2==e.getSource()){
-                    double a=Integer.parseInt(jt.getText());
-                    double b=Integer.parseInt(jt1.getText());
-                    String r=(a-b)+"";
-                    res.setText (r);
+                try{
+                    if (btn2 == e.getSource()) {
+                        double a = Integer.parseInt(jt.getText());
+                        double b = Integer.parseInt(jt1.getText());
+                        String r = (a - b) + "";
+                        res.setText(r);
+                    }
+                }catch(NumberFormatException e1){
+                    res.setText("Invalid(NumberFormatException)");
                 }
             }
         });
@@ -67,11 +76,16 @@ public class Calculator {
         btn3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(btn3==e.getSource()){
-                    double a=Integer.parseInt(jt.getText());
-                    double b=Integer.parseInt(jt1.getText());
-                    String r=(double)(a*b)+"";
-                    res.setText (r);
+                try{
+                    if(btn3==e.getSource()){
+                        double a=Integer.parseInt(jt.getText());
+                        double b=Integer.parseInt(jt1.getText());
+                        String r=(double)(a*b)+"";
+                        res.setText (r);
+                    }
+                }
+                catch(NumberFormatException e1){
+                    res.setText("Invalid(NumberFormatException)");
                 }
             }
         });
@@ -82,15 +96,19 @@ public class Calculator {
         btn4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(btn4==e.getSource()){
-                    double a=Integer.parseInt(jt.getText());
-                    double b=Integer.parseInt(jt1.getText());
-                    if(b==0){
-                        res.setText("Invalid!");
-                    }else {
-                        String r = (a / b) + "";
-                        res.setText(r);
+                try{
+                    if(btn4==e.getSource()){
+                        double a=Integer.parseInt(jt.getText());
+                        double b=Integer.parseInt(jt1.getText());
+                        if(b==0){
+                            res.setText("Invalid!(ArithmeticException)");
+                        }else {
+                            String r = (a / b) + "";
+                            res.setText(r);
+                        }
                     }
+                }catch(NumberFormatException e1){
+                    res.setText("Invalid(NumberFormatException)");
                 }
             }
         });
@@ -101,15 +119,19 @@ public class Calculator {
         btn5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(btn5==e.getSource()){
-                    double a=Integer.parseInt(jt.getText());
-                    double b=Integer.parseInt(jt1.getText());
-                    if(b==0){
-                        res.setText("Invalid !");
-                    }else {
-                        String r = (a % b) + "";
-                        res.setText(r);
+                try{
+                    if(btn5==e.getSource()){
+                        double a=Integer.parseInt(jt.getText());
+                        double b=Integer.parseInt(jt1.getText());
+                        if(b==0){
+                            res.setText("Invalid(ArithmeticException)");
+                        }else {
+                            String r = (a % b) + "";
+                            res.setText(r);
+                        }
                     }
+                }catch(NumberFormatException e1){
+                    res.setText("Invalid(NumberFormatException)");
                 }
             }
         });
