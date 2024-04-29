@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FitFreek Pro</string>
+    <string name="fit">"@copyright/FitFreek-Pro"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="close">Close\n</string>
+    <string name="open">Open\n</string>
+</resources>

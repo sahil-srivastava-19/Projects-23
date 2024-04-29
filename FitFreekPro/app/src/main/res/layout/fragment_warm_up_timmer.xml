@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image3"
+    tools:context=".WarmUpTimmer"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Warm-Up timer"
+        android:textSize="40dp"
+        android:fontFamily="@font/tnr"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="40sp"
+        android:textColor="#EA2828"
+        android:background="#333131"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="00:00:00"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:background="#40E10707"
+        android:id="@+id/clockTimer"
+        android:layout_marginBottom="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="250dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Enter The Duration For Your WarmUp( in minutes) : "
+        android:textSize="15dp"
+        android:layout_marginTop="29dp"
+        android:textColor="@color/white"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Type here"
+        android:id="@+id/txt"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/start"
+        android:text="Start The timer"
+        android:backgroundTint="#970F0F"
+        android:onClick="combined"
+        android:textStyle="italic" />
+
+
+</LinearLayout>

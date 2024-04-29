@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/image2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fc"
+        android:background="#3F51B5"
+        android:name="com.example.fitfreekpro.CombinedExercise"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="60sp"
+        android:text="''The only person you are destined to become is the person you decide to be.''
+                            Ralph Waldo Emerson"
+        android:textStyle="italic"
+        android:textColor="#9A0A"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColorHighlight="#9A0A0A"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200sp"
+        android:layout_gravity="center"
+        android:id="@+id/combinedExercise"
+        android:text="Combined Exercise"
+        android:backgroundTint="#970F0F"
+        android:onClick="combined"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="165sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center"
+        android:text="Warmup Timer"
+        android:id="@+id/autoTimer"
+        android:onClick="warmup"
+        android:backgroundTint="#970F0F"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fit"
+        android:layout_gravity="center"
+        android:textColor="#E5851E"
+        android:layout_marginTop="150dp"/>
+
+</LinearLayout>
